@@ -1,4 +1,4 @@
-const Discord = require('discord.js-selfbot-v13');
+const Discord = require('discord.js-selfbot-v13'); // npm i discord.js-selfbot-v13
 const client = new Discord.Client({
   checkNamespam: true,
   checkSelfbot: true
@@ -16,4 +16,4 @@ client.on('messageCreate', (message) => {
   }
 });
 
-client.login('MTMyMTMyNTE1OTE3NjYwMTY3MQ.GMNESq.MtTYN6CdIOpgVw5w5adL8JBBH_iMwNBZBdBstw');
+client.login('tokeniniz');
