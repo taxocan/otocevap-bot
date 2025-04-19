@@ -16,4 +16,4 @@ client.on('messageCreate', (message) => {
   }
 });
 
-client.login('tokeniniz');
+client.login('MTMyMTMyNTE1OTE3NjYwMTY3MQ.GMNESq.MtTYN6CdIOpgVw5w5adL8JBBH_iMwNBZBdBstw');
