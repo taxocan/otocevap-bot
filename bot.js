@@ -8,16 +8,16 @@ client.on('ready', () => {
   console.log(`${client.user.tag} olarak giriş yapıldı.`);
 });
 
-const triggerWords = ['sa', 'selam', 'selamın aleyküm', 'slm'];
+const triggerWords = ['merhaba']; // botu tetikleyecek kelime
 
 client.on('messageCreate', (message) => {
-  if (message.author.id === client.user.id) return; // Kendi mesajına tepki verme
+  if (message.author.id === client.user.id) return; 
 
   const content = message.content.toLowerCase().trim();
 
   if (triggerWords.includes(content)) {
-    message.channel.send('as hoşgeldin kardeşim.').catch(console.error);
+    message.channel.send('merhaba').catch(console.error); // botun vereceği cevap
   }
 });
 
-client.login('tokeniniz'); 
+client.login('token'); 
